@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>STUDENT STYLE HUB</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>		
+		
+		<link rel="stylesheet" href="D:\PROJECT FILE\CSS\signUp.css">
+		<link rel="stylesheet" href="D:\PROJECT FILE\CSS\style.css">
+
+	</head>
+	<body>
+		<section id="header">
+			<a href="#"><img  src="D:\PROJECT FILE\images\Logo\logo.png"></a>												
+			
+			<div>
+				<ul id="navbar">
+					<li><a href="about.html">About</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a  class="active" href="signUp.html">Sign Up</a></li>
+					<li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>						<!-- cart.html,  font awesome cdn , icon link, icon image  -->
+					<a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+				</ul>
+			</div>
+			<div id="mobile">
+				<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>						
+				<i id="bar" class="fas fa-outdent"></i>
+				
+			</div>
+		</section>
+		
+		<div class="container">
+			<div class="form-box">
+				<h1 id="title">Sign Up</h1>
+				<div id="res" style="color:green; font-size:14px;"></div>
+				<form method="post" id="signupForm">
+					<div class="input-group">
+						<div class="input-field" id="nameField">
+							<i class="fa-solid fa-user"></i>
+							<input name="name" type="text" placeholder="Name" id="nameInput" required>
+						</div>
+						
+						<div class="input-field">
+							<i class="fa-solid fa-envelope"></i>
+							<input name="email" type="text" placeholder="Email" id="emailInput" required>
+						</div>
+						
+						<div class="input-field">
+							<i class="fa-solid fa-lock"></i>
+							<input name="password" type="password" placeholder="password" id="passwordInput" required>
+						</div>
+						<!-- <p>Forget Password <a href="#">Click here!</a></p>  -->
+						
+						<!-- Hidden input field to store generated user ID -->
+						<input type="hidden" id="userId" name="userId">
+					</div>
+					<div class="btn-field">
+						<button name="signUpBtn" type="submit" id="signupBtn">Sign up</button>
+						<button type="button" id="signinBtn" class="disable" onclick="window.location.href='signIn.html';">Sign in</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<script src="Javascript\signUp.js"></script>
+		<script src="Javascript\script.js"></script> 
+	</body>
+</html>

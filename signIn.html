@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>STUDENT STYLE HUB</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>		
+		
+		<link rel="stylesheet" href="D:\PROJECT FILE\CSS\style.css">
+		<link rel="stylesheet" href="D:\PROJECT FILE\CSS\signUp.css">
+	</head>
+	<body>
+		<section id="header">
+			<a href="#"><img  src="D:\PROJECT FILE\images\Logo\logo.png"></a>												
+			
+			<div>
+				<ul id="navbar">
+					<li><a href="about.html">About</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="shop.html">Shop</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a  class="active" href="signUp.html">Sign Up</a></li>
+					<li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>						<!-- cart.html,  font awesome cdn , icon link, icon image  -->
+					<a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+				</ul>
+			</div>
+			<div id="mobile">
+				<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>						
+				<i id="bar" class="fas fa-outdent"></i>
+				
+			</div>
+		</section>
+		
+		<div class="container">
+			<div class="form-box">
+				<h1 id="title">Sign In</h1>
+				<form id="signupForm">
+					<div class="input-group">
+						<!--<div class="input-field" id="nameField">
+							<i class="fa-solid fa-user"></i>
+							<input type="text" placeholder="Name" id="nameInput">
+						</div>-->
+						
+						<div class="input-field">
+							<i class="fa-solid fa-envelope"></i>
+							<input type="text" placeholder="Email" id="emailInput" required>
+						</div>
+						
+						<div class="input-field">
+							<i class="fa-solid fa-lock"></i>
+							<input type="password" placeholder="password" id="passwordInput" required>
+						</div>
+						<p>Forget Password <a href="#">Click here!</a></p>
+					</div>
+					<div class="btn-field">
+						<button type="button" id="signupBtn" class="disable" onclick="window.location.href='signUp.html';">Sign up</button>
+						<button type="submit" id="signinBtn" >Sign in</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<script>
+			
+			
+			let signupBtn=document.getElementById("signupBtn");
+			let signinBtn=document.getElementById("signinBtn");
+			let nameField=document.getElementById("nameField");
+			let title=document.getElementById("title");
+			let signupForm = document.getElementById("signupForm");
+			console.log("Signup form:", signupForm);
+			
+			
+			signinBtn.addEventListener("click", function() {
+				//nameField.style.maxHeight = "0";
+				//title.innerHTML = "Sign In";
+				signupBtn.classList.add("disable");
+				signinBtn.classList.remove("disable");
+				//signupBtn.type = "button"; // Change type of Sign up button to "submit"
+				//signinBtn.type = "submit"; // Change type of Sign in button to "button"
+				//nameField.getElementsByTagName("input")[0].disabled = true; // Disable the name field
+				//console.log("name field disabled");
+			});
+
+			signupBtn.addEventListener("click", function() {	
+				//nameField.style.maxHeight = "60px";
+				//title.innerHTML = "Sign Up";
+				signupBtn.classList.remove("disable");
+				signinBtn.classList.add("disable");
+				//signupBtn.type = "submit"; // Change type of Sign up button to "button"
+				//signinBtn.type = "button"; // Change type of Sign in button to "submit"
+				
+			});	
+			
+
+			
+			signupForm.addEventListener("submit", function (event) {
+			
+				console.log("Form validation function called");
+			
+				event.preventDefault(); // Prevent the default form submission
+
+			
+
+				// Perform form validation
+			//	let nameInput = document.getElementById("nameInput");
+				let emailInput = document.getElementById("emailInput");
+				let passwordInput = document.getElementById("passwordInput");
+
+				//console.log("Name:", nameInput.value);
+				console.log("Email:", emailInput.value);
+				console.log("Password:", passwordInput.value);
+
+			/*	// Validate name
+				if (nameInput.value.trim() === "") {
+					alert("Please enter your name.");
+					return false;
+				} */
+
+				// Validate email format
+				let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				if (!emailPattern.test(emailInput.value)) {
+					alert("Please enter a valid email address.");
+					return false;
+				}
+
+				// Validate password length
+				/*if (passwordInput.value.length < 8) {
+					alert("Password must be at least 8 characters long.");
+					return false;
+				}*/
+	
+				// If all validations pass, submit the form
+				// add code here to send the form data to your server
+				
+				
+				//alter("successfull");
+				if (signupBtn.classList.contains("disable")) {
+					// Sign Up button is active, perform sign up action
+					alert("Sign In action performed successfully!");
+				} else {
+					// Sign In button is active, perform sign in action
+					alert("Sign Up action performed successfully!");
+					}
+				console.log("Form submission prevented:", event.defaultPrevented);
+	
+			});
+			
+		</script>
+		
+		<script src="Javascript\script.js"></script> 
+	</body>
+</html>
