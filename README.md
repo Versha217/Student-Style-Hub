@@ -86,9 +86,9 @@ _No server setup or installation required._
 
 ## 📸 Screenshots
 
-> _Add screenshots here (optional). Example:_
+> About Page
 
-![Homepage](./images/homepage-screenshot.png)
+![About](./Screenshots/About.png)
 
 ---
 
