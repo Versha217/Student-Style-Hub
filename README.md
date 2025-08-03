@@ -88,7 +88,42 @@ _No server setup or installation required._
 
 > About Page
 
-![About](./Screenshots/About.png)
+![About Page](./Screenshots/About.png)
+
+---
+> Home Page
+
+![Home Page](./Screenshots/Home.png)
+
+---
+> Shop Page
+
+![Shop Page](./Screenshots/Shop.png)
+
+---
+> Blog Page
+
+![Blog Page](./Screenshots/Blog.png)
+
+---
+> Contact Page
+
+![Contact Page](./Screenshots/Contact.png)
+
+---
+> Sign Up Page
+
+![Sign Up Page](./Screenshots/Sign Up.png)
+
+---
+> Sign In Page
+
+![Sign In Page](./Screenshots/Sign In.png)
+
+---
+> Cart Page
+
+![Cart Page](./Screenshots/Cart.png)
 
 ---
 
