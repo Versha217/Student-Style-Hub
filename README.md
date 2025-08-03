@@ -113,12 +113,12 @@ _No server setup or installation required._
 ---
 > Sign Up Page
 
-![Sign Up Page](./Screenshots/Sign Up.png)
+![Sign Up Page](./Screenshots/SignUp.png)
 
 ---
 > Sign In Page
 
-![Sign In Page](./Screenshots/Sign In.png)
+![Sign In Page](./Screenshots/SignIn.png)
 
 ---
 > Cart Page
